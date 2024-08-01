@@ -27,7 +27,7 @@ int main() {
                 tmp++;
             }
         }
-        if (tmp == 3) {
+        if (tmp >= 3) {
             printf("1\n");
         }
         else {
