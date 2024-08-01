@@ -21,13 +21,13 @@ int main() {
         scanf("%d %d", &r, &c);
         arr[r - 1][c - 1] = 1;
         for (int j = 0; j < 4; j++) {
-            int nx = r - 1 + dx[j];
-            int ny = c - 1 + dy[j];
+            int nx = (r - 1) + dx[j];
+            int ny = (c - 1) + dy[j];
             if (in_range(r - 1, c - 1, n) && arr[nx][ny] == 1) {
                 tmp++;
             }
         }
-        if (tmp >= 3) {
+        if (tmp == 3) {
             printf("1\n");
         }
         else {
