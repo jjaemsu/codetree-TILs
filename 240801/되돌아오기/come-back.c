@@ -13,6 +13,8 @@ int main() {
     int y = 0;
     int time = 0;
     int ans = -1;
+    bool valid_ans = false;
+
     scanf("%d", &n);
 
     char dir[4] = { 'N', 'E', 'S', 'W' };
@@ -33,8 +35,9 @@ int main() {
                 }
             }
             time++;
-            if (x == 0 && y == 0) {
+            if (!valid_ans && x == 0 && y == 0) {
                 ans = time;
+                valid_ans = true;
             }
         }
     }
