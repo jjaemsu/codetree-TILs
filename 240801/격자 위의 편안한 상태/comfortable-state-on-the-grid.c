@@ -19,11 +19,11 @@ int main() {
         int tmp = 0;
         int r, c;
         scanf("%d %d", &r, &c);
-        arr[r][c] = 1;
+        arr[r - 1][c - 1] = 1;
         for (int j = 0; j < 4; j++) {
-            int nx = r + dx[j];
-            int ny = c + dy[j];
-            if (in_range(r, c, n) && arr[nx][ny] == 1) {
+            int nx = r - 1 + dx[j];
+            int ny = c - 1 + dy[j];
+            if (in_range(r - 1, c - 1, n) && arr[nx][ny] == 1) {
                 tmp++;
             }
         }
