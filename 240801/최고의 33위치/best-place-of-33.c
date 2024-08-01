@@ -23,12 +23,12 @@ int main() {
 	}
 
 	for (int row = 0; row < n; row++) {
-		if (row + 2 > n) {
+		if (row + 2 >= n) {
 			continue;
 		}
 		for (int col = 0; col < n; col++) {
 			int cnt = 0;
-			if (col + 2 > n){
+			if (col + 2 >= n){
 				continue;
 			}
 			for (int i = row; i < 3; i++) {
