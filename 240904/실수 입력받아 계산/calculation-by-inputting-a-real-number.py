@@ -3,4 +3,4 @@ b = float(input())
 
 total = a + b
 
-print(total)
+print("[0:.2f]".format(total))
