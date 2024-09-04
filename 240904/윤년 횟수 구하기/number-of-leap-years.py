@@ -2,7 +2,7 @@ n = int(input())
 
 cnt = 0
 
-for i in range(4, n, 4):
+for i in range(4, n + 1, 4):
 
     if(i % 400 == 0):
         cnt += 1
